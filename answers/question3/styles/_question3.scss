@@ -1,0 +1,67 @@
+// palette
+$color1: #345;
+$color2: #666;
+$color3: red;
+
+// main section
+.hello-world {
+
+    .col1,
+    .col2 {
+        width: 50%;
+    }
+
+    .col1 {
+        color: $color2;
+        background: $color1;
+        z-index: 37;
+        position: static;
+    }
+
+    .col2 {
+        color: $color1;
+        background: $color2;
+    }
+}
+
+.lorem {
+    &-ipsum {
+        padding: 0 2em;
+    }
+
+    &-dolor::before {
+        color: lighten($color2, 20%);
+    }
+}
+
+// end of main section
+
+// footer
+.fooBar {
+    font-size: 16px;
+    padding: 32px;
+    border: $color3 solid 1px;
+
+    .big {
+        font-size: 32px;
+        padding: 64px;
+    }
+}
+
+// end of footer section
+
+// media queries
+@media (max-width: 1000px) {
+    .hello-world {
+        .col1 {
+            color: #999;
+            width: 75%;
+        }
+
+        .col2 {
+            width: 25%;
+        }
+    }
+}
+
+// end of media queries

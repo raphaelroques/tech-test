@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 4</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>QUESTION 4</h1>
+    </header>
+
+    <main>
+        <section class="wrapper">
+            <h2>4. Lequel est le meilleur sémantiquement et pourquoi?</h2>
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="images/A-section-code-image.jpg" alt="A section code" />
+                </div>
+                <div class="image-container">
+                    <img src="images/B-section-code-image.jpg" alt="B section code" />
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <h3>Ma réponse :</h3>
+            <p>Le meilleur sémantiquement est la version A.</p>
+            <p>
+                Il me semble, en effet, que la version B est plus lourde
+                sémantiquement. On peut aussi noter qu'il y a quelques
+                petites erreurs.
+            </p>
+            <ol>
+                <li>
+                    Dans la version B, l'intégralité du contenu de la balise
+                    &lt;h1&gt; est aussi wrappée dans une balise
+                    &lt;span&gt; ce qui me semble avoir peu d'intérêt ici.
+                    Une balise &lt;span&gt; dans un header &lt;h1&gt; aurait
+                    en revanche pu être très utile si l'on avait
+                    voulu ajouter des styles à une partie (un mot, une
+                    lettre) du contenu de la balise &lt;h1&gt;. Mais ce
+                    n'est pas le cas dans l'exemple.
+                </li>
+                <li>
+                    L'élément &lt;hgroup&gt; a été retiré de la
+                    spécification HTML5. Cette balise est par conséquent à
+                    éviter pour des raisons de compatibilité et de "bonnes
+                    pratiques".
+                </li>
+                <li>
+                    Les noms des classes (Contenu, Auteur) commencent ici
+                    par des majuscules ce qui est assez peu conventionnel.
+                </li>
+                <li>
+                    Les guillemets ne sont pas refermés pour la classe
+                    'Contenu' ce qui peut générer des bugs d'affichage.
+                </li>
+                <li>
+                    Dans le code A ou aurait peut-être pu mettre les deux
+                    paragraphes &lt;p&gt; dans une balise de type
+                    &lt;main&gt; par exemple; Cependant cette structure est
+                    tout à fait correcte sémantiquement.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Raphael Roques - Absolunet tech-test 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>

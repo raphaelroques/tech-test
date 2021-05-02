@@ -1,0 +1,163 @@
+// general
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul,
+li,
+a,
+p,
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+// header
+header {
+    background-color: dimgrey;
+    height: 40vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+// main
+main {
+    margin: 100px 0;
+    height: 35vh;
+
+    // ------------  PARTIE DU CODE RELATIVE AU TECH-TEST  -------------
+    div {
+        max-width: 1280px;
+        margin: 0 auto;
+        width: 90%;
+        position: relative;
+
+        &::before {
+            content: '⭐';
+            position: absolute;
+            font-size: 3.5rem;
+            left: -20px;
+
+
+        }
+    }
+
+    h1,
+    li {
+        margin-left: 50px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: rgb(90, 90, 90);
+        text-transform: uppercase;
+
+
+        &::first-letter {
+            color: blue;
+        }
+    }
+
+    ul {
+        padding: 10px;
+        font-size: 2rem;
+        background-color: whitesmoke;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        position: relative;
+        width: 500px;
+
+        li:nth-of-type(4) {
+            color: rgb(0, 228, 0);
+
+        }
+
+
+        li:nth-of-type(n - 1)::before {
+            content: "\2022";
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            width: 0.8em;
+            margin-left: -1em;
+        }
+
+        li:nth-of-type(2)::before {
+            content: "\2022";
+            color: rgb(253, 212, 212);
+            font-weight: bold;
+            display: inline-block;
+            width: 0.8em;
+            margin-left: -1em;
+        }
+
+        li:nth-of-type(n + 5)::before {
+            content: "-";
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+            width: 0.8em;
+            margin-left: -1em;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: -25px;
+            height: 70px;
+            width: 95px;
+            background-image: url(../images/question-2-image.jpg);
+            background-size: cover;
+        }
+    }
+
+    // ------------  FIN DE LA PARTIE DU CODE RELATIVE AU TECH-TEST  -------------
+}
+
+
+// footer
+footer {
+    background-color: black;
+    color: white;
+    height: 15vh;
+
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-weight: normal;
+            font-size: 1.3rem;
+        }
+    }
+}
